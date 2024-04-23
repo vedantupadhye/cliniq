@@ -9,6 +9,8 @@ import FAQ from './components/FAQ';
 import Cards from './components/Cards';
 import Work from './components/Work';
 import Footer from './components/Footer';
+import Building from './components/Building';
+import Ecosystem from './components/Ecosystem';
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
       <GigCard />
       <Information />
       <Work />
+      <Ecosystem />
       <Mission />
+      <Building />
       <Cards />
       <FAQ />
       <Footer />

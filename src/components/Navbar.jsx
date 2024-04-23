@@ -92,7 +92,7 @@
 
 
 import React, { useState } from 'react';
-import logo from '../../public/Vector.png';
+import logo from '../../public/logo.png';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -102,19 +102,19 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-500 py-4 px-4">
+    <nav className=" py-4 px-4">
 
       <div className="container mx-auto flex items-center justify-between ">
      
         <div className="flex items-center ">
-          <a href="#" className="text-black font-bold text-2xl">
+          <a href="#" className="text-black ml-8 font-bold text-2xl">
             <img src={logo} alt="Mission"></img>
           </a>
         </div>
 
 
         {/* Navigation Links for Laptop */}
-        <div className=" text-white hidden md:flex md:items-center md:justify-between">
+        <div className="  hidden md:flex md:items-center md:justify-between">
           <a href="#" className=" ml-5 relative text-xl w-fit block after:block after:content-['']
            after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Home</a>
           <a href="#" className=" ml-5 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">About</a>
