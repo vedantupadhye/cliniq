@@ -1,44 +1,4 @@
-// import React from 'react';
-
-// const Information = () => {
-//     return (
-//       <div className="bg-blue-500 py-20 px-8 ">
-//         <div className="container mx-auto ">
-//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-16">
-//             {/* Card 1 */}
-//             <div className="bg-white rounded-lg py-12 px-8 font-medium ">
-//               <p>Rising Healthcare Costs - Indians expended around ₹86,000 crore on healthcare expenses in 2022 </p>
-//             </div>
-//             {/* Card 2 */}
-//             <div className="bg-white rounded-lg py-12 px-8 font-medium ">
-//               <p>One of highest Out of Pocket Expenditure of around 47%</p>
-//             </div>
-//             {/* Card 3 */}
-//             <div className="bg-white rounded-lg py-12 px-8 font-medium ">
-//               <p>Underpenetrated Health insurance with premiums rising (40%) after Covid</p>
-//             </div>
-//             {/* Card 4 */}
-//             <div className="bg-white rounded-lg py-12 px-8 font-medium ">
-//               <p>Skewed Doctor to patient ratio of (1:900), overburdened system</p>
-//             </div>
-//             {/* Card 5 */}
-//             <div className="bg-white rounded-lg py-12 px-8 font-medium ">
-//               <p>90% of health records are manual , without any record keeping</p>
-//             </div>
-//             {/* Card 8 */}
-//             <div className="bg-white rounded-lg py-12 px-8 font-medium ">
-//               <p>40% of the providers time is spent on administrative work</p>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   };
-  
-  
-// export default Information;
-
-
+// scrool Effect
 import React, { useEffect } from 'react';
 import { Fade, Zoom, Slide } from 'react-reveal';
 
@@ -51,45 +11,47 @@ const Information = () => {
   }, []);
 
   return (
-    <div className="bg-blue-500 py-20 px-8">
+    <div className="bg-blue-500 py-10 md:py-20 px-4 md:px-8">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-16">
-          {/* Card 1 */}
-          <Fade>
-            <div className="bg-white rounded-lg py-12 px-8 font-medium">
-              <p>Rising Healthcare Costs - Indians expended around ₹86,000 crore on healthcare expenses in 2022 </p>
-            </div>
-          </Fade>
-          {/* Card 2 */}
-          <Zoom>
-            <div className="bg-white rounded-lg py-12 px-8 font-medium">
-              <p>One of highest Out of Pocket Expenditure of around 47%</p>
-            </div>
-          </Zoom>
-          {/* Card 3 */}
-          <Slide left>
-            <div className="bg-white rounded-lg py-12 px-8 font-medium">
-              <p>Underpenetrated Health insurance with premiums rising (40%) after Covid</p>
-            </div>
-          </Slide>
-          {/* Card 4 */}
-          <Slide right>
-            <div className="bg-white rounded-lg py-12 px-8 font-medium">
-              <p>Skewed Doctor to patient ratio of (1:900), overburdened system</p>
-            </div>
-          </Slide>
-          {/* Card 5 */}
-          <Fade>
-            <div className="bg-white rounded-lg py-12 px-8 font-medium">
-              <p>90% of health records are manual, without any record keeping</p>
-            </div>
-          </Fade>
-          {/* Card 6 */}
-          <Zoom>
-            <div className="bg-white rounded-lg py-12 px-8 font-medium">
-              <p>40% of the providers time is spent on administrative work</p>
-            </div>
-          </Zoom>
+        <div className="overflow-x-auto md:overflow-hidden">
+          <div className="flex flex-no-wrap">
+            {/* Card 1 */}
+            <Fade>
+              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+                <p>Rising Healthcare Costs - Indians expended around ₹86,000 crore on healthcare expenses in 2022 </p>
+              </div>
+            </Fade>
+            {/* Card 2 */}
+            <Zoom>
+              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+                <p>One of highest Out of Pocket Expenditure of around 47%</p>
+              </div>
+            </Zoom>
+            {/* Card 3 */}
+            <Slide left>
+              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+                <p>Underpenetrated Health insurance with premiums rising (40%) after Covid</p>
+              </div>
+            </Slide>
+            {/* Card 4 */}
+            <Slide right>
+              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+                <p>Skewed Doctor to patient ratio of (1:900), overburdened system</p>
+              </div>
+            </Slide>
+            {/* Card 5 */}
+            <Fade>
+              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+                <p>90% of health records are manual, without any record keeping</p>
+              </div>
+            </Fade>
+            {/* Card 6 */}
+            <Zoom>
+              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+                <p>40% of the providers time is spent on administrative work</p>
+              </div>
+            </Zoom>
+          </div>
         </div>
       </div>
     </div>
@@ -97,6 +59,145 @@ const Information = () => {
 };
 
 export default Information;
+
+
+
+
+
+
+
+
+
+
+// approch with smaller text
+
+// import React, { useEffect } from 'react';
+// import { Fade, Zoom, Slide } from 'react-reveal';
+
+// const Information = () => {
+//   useEffect(() => {
+
+//     return () => {
+
+//     };
+//   }, []);
+
+//   return (
+//     <div className="bg-blue-500 py-10 md:py-20 px-4 md:px-8">
+//       <div className="container mx-auto">
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 mx-4 md:mx-16">
+//           {/* Card 1 */}
+//           <Fade>
+//             <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium">
+//               <p>Rising Healthcare Costs - Indians expended around ₹86,000 crore on healthcare expenses in 2022 </p>
+//             </div>
+//           </Fade>
+//           {/* Card 2 */}
+//           <Zoom>
+//             <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium">
+//               <p>One of highest Out of Pocket Expenditure of around 47%</p>
+//             </div>
+//           </Zoom>
+//           {/* Card 3 */}
+//           <Slide left>
+//             <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium">
+//               <p>Underpenetrated Health insurance with premiums rising (40%) after Covid</p>
+//             </div>
+//           </Slide>
+//           {/* Card 4 */}
+//           <Slide right>
+//             <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium">
+//               <p>Skewed Doctor to patient ratio of (1:900), overburdened system</p>
+//             </div>
+//           </Slide>
+//           {/* Card 5 */}
+//           <Fade>
+//             <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium">
+//               <p>90% of health records are manual, without any record keeping</p>
+//             </div>
+//           </Fade>
+//           {/* Card 6 */}
+//           <Zoom>
+//             <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium">
+//               <p>40% of the providers time is spent on administrative work</p>
+//             </div>
+//           </Zoom>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Information;
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useEffect } from 'react';
+// import { Fade, Zoom, Slide } from 'react-reveal';
+
+// const Information = () => {
+//   useEffect(() => {
+
+//     return () => {
+
+//     };
+//   }, []);
+
+//   return (
+//     <div className="bg-blue-500 py-20 px-8">
+//       <div className="container mx-auto">
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-16">
+//           {/* Card 1 */}
+//           <Fade>
+//             <div className="bg-white rounded-lg py-12 px-8 font-medium">
+//               <p>Rising Healthcare Costs - Indians expended around ₹86,000 crore on healthcare expenses in 2022 </p>
+//             </div>
+//           </Fade>
+//           {/* Card 2 */}
+//           <Zoom>
+//             <div className="bg-white rounded-lg py-12 px-8 font-medium">
+//               <p>One of highest Out of Pocket Expenditure of around 47%</p>
+//             </div>
+//           </Zoom>
+//           {/* Card 3 */}
+//           <Slide left>
+//             <div className="bg-white rounded-lg py-12 px-8 font-medium">
+//               <p>Underpenetrated Health insurance with premiums rising (40%) after Covid</p>
+//             </div>
+//           </Slide>
+//           {/* Card 4 */}
+//           <Slide right>
+//             <div className="bg-white rounded-lg py-12 px-8 font-medium">
+//               <p>Skewed Doctor to patient ratio of (1:900), overburdened system</p>
+//             </div>
+//           </Slide>
+//           {/* Card 5 */}
+//           <Fade>
+//             <div className="bg-white rounded-lg py-12 px-8 font-medium">
+//               <p>90% of health records are manual, without any record keeping</p>
+//             </div>
+//           </Fade>
+//           {/* Card 6 */}
+//           <Zoom>
+//             <div className="bg-white rounded-lg py-12 px-8 font-medium">
+//               <p>40% of the providers time is spent on administrative work</p>
+//             </div>
+//           </Zoom>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Information;
 
 
 

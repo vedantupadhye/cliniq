@@ -12,7 +12,7 @@ const GigCard = () => {
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 md:mb-2 text-center md:text-left">
             CliniQ360 Suite for Connected Health Care
           </h2>
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row mt-20">
             {/* Left Section */}
             <div className="flex-1 md:relative flex flex-col items-center md:items-start md:flex-row md:ml-0 md:mr-8">
               <div className="bg-gray-300 w-3/4 md:w-1 h-1 md:h-3/4 mb-4 md:mb-0 md:mr-4"></div>
