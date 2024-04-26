@@ -33,7 +33,7 @@ const GigCard = () => {
             </div>
             
             {/* Right Section */}
-            <div className="flex-1 md:ml-0 md:ml-8 mt-4 md:mt-0">
+            <div className="flex-1 md:ml-0  mt-4 md:mt-0">
               <div className="bg-white p-4 md:p-6 rounded-lg shadow-2xl">
                 <h1 className='font-semibold text-lg md:text-xl mb-2'>Health On Demand</h1>
                 <p className='mb-4 md:mb-5 text-sm md:text-base'>

@@ -35,9 +35,9 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="container px-16 mt-32">
+    <div className="container px-16 mt-32 ">
       <h1 className="text-3xl font-bold mb-8">Frequently Asked Questions</h1>
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 gap-4 ">
         {faqData.map((faq, index) => (
           <div key={index} className="border p-2">
             <div className="cursor-pointer flex justify-between py-2" onClick={() => toggleAccordion(index)}>

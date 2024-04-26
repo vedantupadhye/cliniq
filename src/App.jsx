@@ -11,6 +11,7 @@ import Work from './components/Work';
 import Footer from './components/Footer';
 import Building from './components/Building';
 import Ecosystem from './components/Ecosystem';
+import ContactUs from './components/ContactUs';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Building />
       <Cards />
       <FAQ />
+      <ContactUs />
       <Footer />
     </main>
   );

@@ -1,6 +1,4 @@
-// scrool Effect
 import React, { useEffect } from 'react';
-import { Fade, Zoom, Slide } from 'react-reveal';
 
 const Information = () => {
   useEffect(() => {
@@ -16,41 +14,29 @@ const Information = () => {
         <div className="overflow-x-auto md:overflow-hidden">
           <div className="flex flex-no-wrap">
             {/* Card 1 */}
-            <Fade>
-              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
-                <p>Rising Healthcare Costs - Indians expended around ₹86,000 crore on healthcare expenses in 2022 </p>
-              </div>
-            </Fade>
+            <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+              <p>Rising Healthcare Costs - Indians expended around ₹86,000 crore on healthcare expenses in 2022 </p>
+            </div>
             {/* Card 2 */}
-            <Zoom>
-              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
-                <p>One of highest Out of Pocket Expenditure of around 47%</p>
-              </div>
-            </Zoom>
+            <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+              <p>One of highest Out of Pocket Expenditure of around 47%</p>
+            </div>
             {/* Card 3 */}
-            <Slide left>
-              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
-                <p>Underpenetrated Health insurance with premiums rising (40%) after Covid</p>
-              </div>
-            </Slide>
+            <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+              <p>Underpenetrated Health insurance with premiums rising (40%) after Covid</p>
+            </div>
             {/* Card 4 */}
-            <Slide right>
-              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
-                <p>Skewed Doctor to patient ratio of (1:900), overburdened system</p>
-              </div>
-            </Slide>
+            <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+              <p>Skewed Doctor to patient ratio of (1:900), overburdened system</p>
+            </div>
             {/* Card 5 */}
-            <Fade>
-              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
-                <p>90% of health records are manual, without any record keeping</p>
-              </div>
-            </Fade>
+            <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0 mr-4 md:mr-10" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+              <p>90% of health records are manual, without any record keeping</p>
+            </div>
             {/* Card 6 */}
-            <Zoom>
-              <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0" style={{ minWidth: '280px', maxWidth: '90vw' }}>
-                <p>40% of the providers time is spent on administrative work</p>
-              </div>
-            </Zoom>
+            <div className="bg-white rounded-lg py-8 px-4 md:py-12 md:px-8 font-medium mb-4 md:mb-0" style={{ minWidth: '280px', maxWidth: '90vw' }}>
+              <p>40% of the providers time is spent on administrative work</p>
+            </div>
           </div>
         </div>
       </div>
@@ -59,7 +45,6 @@ const Information = () => {
 };
 
 export default Information;
-
 
 
 
